@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросники</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/roboto-flex" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar-expand-lg navbar-light p-2">
+        <div class="row flex-nowrap justify-content-between align-items-center" style="width: 100vw;">
+            <div class="col-4 justify-content-start"><a href="#" class="col-4"><img class="logo"
+                        src="images/logo-1c-rarus 1.svg" alt=""></a></div>
+            <div class="col-4 text-center">
+                <div class="text">Опросники</div>
+            </div>
+            <div class="col-4 d-flex justify-content-end"><img class="profileUserImg"
+                    src="images/profile-user-svgrepo-com 1.svg" alt=""></div>
+        </div>
+    </nav>
+
+    <div class="container p-0 que-list" id="questionList">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 justify-content-start"><button type="button" class="btn btn-primary create-que p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">Создать</button></div>
+            <div class="col-4 d-flex justify-content-end">
+                <div class="container-serch">
+                    <input type="text" placeholder="Поиск..." class="searchbar">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon"
+                        class="button">
+                </div>
+            </div>
+        </div>
+        <div class="container all-que-list">
+            <table class="table table-hover table_block">
+                <thead>
+                    <tr>
+                        <th class="date" style="font-size: 2.5vh;">Дата создания</th>
+                        <th class="vl">&nbsp;</th>
+                        <th class="questionnaire" style="font-size: 2.5vh;">Опросник</th>
+                    </tr>
+                </thead>
+                <tbody id="questionnaires">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered ">
+            <div class="modal-content modelBorder">
+                <div class="row align-items-start p-2">
+                    <div class="col"></div>
+                    <div class="col-8 align-self-center text-center">
+                        <h5 class="text-center" style="color: #ffffff;">Новый опросник</h5>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div data-bs-theme="dark"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Закрыть"></button></div>
+                    </div>
+                </div>
+                <div class="modal-body p-2">
+                    <input type="text" class="form-control inputQueName" id="queName" name="queName"
+                        placeholder="Название опросника" data-reg="" />
+                </div>
+                <div class="modal-footer p-3" style="border-top: 0; justify-content: center;">
+                    <button type="button" class="btn btn-primary buttonSave" data-bs-dismiss="modal">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="xhr.js"></script>
+</body>
+
+</html>

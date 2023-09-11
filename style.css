@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+    background-color: rgba(241, 241, 241, 1);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #5A2FA0;
+    padding: 0px 10px;
+    border-radius: 0px 0px 2vh 2vh;
+    height: 8vh;
+}
+
+nav .text {
+    color: #ffffff;
+    font-size: 3vh;
+    float: none;
+    
+}
+
+.logo {
+    height: 4vh;
+    margin-left: 5px;
+}
+
+.profileUserImg {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.que-list {
+    width: 60vw;
+    min-width: 725px;
+    max-width: 1200px;
+    height: 70vh;
+    min-height: 450px;
+    max-height: 1000px;
+    margin-top: 5vh;
+}
+
+.create-que {
+    color: #ffffff;
+    width: 10vw;
+    min-width: 109px;
+    max-width: 200px;
+    height: 4.5vh;
+    min-height: 34px;
+    max-height: 60px;
+    background-color: #5A2FA0;
+    font-size: 2.5vh;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container-serch {
+    width: 19vw;
+    height: 4.5vh;
+    min-height: 34px;
+    max-height: 60px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 1vh;
+}
+
+.container-serch img {
+    height: 2vh;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    transition: all .1s;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+.searchbar {
+    font-size: 2.5vh;
+    width: 17vw;
+    height: 4.5vh;
+    min-height: 34px;
+    max-height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    transition: all .1s;
+    transition-delay: .1s;
+    padding: 5px;
+    color: rgba(136, 136, 136, 1);
+}
+
+.all-que-list {
+    margin-top: 1vh;
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+
+.all-que-list th,td {
+    text-align: center;
+    background: rgba(221, 221, 221, 0);
+}
+
+.date {
+    width: 30%;
+    text-align: center;
+}
+
+.questionnaire {
+    width: 70%;
+    text-align: center;
+}
+
+.vl {
+    border-right: 1px solid rgba(221, 221, 221, 1);
+}
+
+.modelBorder {
+    background-color: rgba(142, 68, 159, 1);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.inputQueName {
+    width: 70%;
+    height: 6vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: rgba(136, 136, 136, 1);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.buttonSave {
+    background-color: rgba(142, 68, 159, 0);
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #ffffff;
+    height: 5vh;
+    min-height: 30px;
+    max-height: 60px;
+    padding: 0;
+    width: 12vw;
+    min-width: 109px;
+    max-width: 200px;
+}
+
+.modal-footer button:hover {
+    background-color: rgba(142, 68, 159, 0);
+    border: 2px solid #ffffff;
+    color: white;
+}
+
+.open-que {
+    width: 90vw;
+    min-width: 1095px;
+    max-width: 1800px;
+    height: 70vh;
+    margin-top: 5vh;
+}
+
+.exit-for-que {
+    display: flex;
+    cursor: pointer;
+}
+
+.exit-for-que img {
+    display: inline;
+    height: 4vh;
+}
+
+.que-h5-exit {
+    color: rgba(90, 47, 160, 1);
+    font-size: 2.5vh;
+    font-weight: 400;
+    display: inline;
+}
+
+.que-h5 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+.open-tree-que {
+    background-color: #ffffff; 
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #9170F0;
+    color: #9170F0;
+    width: 21vw;
+    min-width: 204px;
+    max-width: 350px;
+    height: 4.5vh;
+    min-height: 34px;
+    max-height: 60px;
+    padding: 0;
+    font-size: 2.5vh;
+}
+
+.que-list-create {
+    margin-top: 1vh;
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    height: 100%;
+    width: 100%;
+    max-width: 1800px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+
+.que-list-create th,td {
+    text-align: center;
+    background: rgba(221, 221, 221, 0);
+    font-size: 2.5vh;
+}
+
+.que-list-create .que {
+    width: 75%;
+    text-align: center;
+}
+
+.code {
+    width: 20%;
+    text-align: center;
+}
+
+.del {
+    width: 5%;
+}
+
+td img {
+    cursor: pointer;
+}
