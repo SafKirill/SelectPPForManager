@@ -56,4 +56,4 @@ function getQuestionnaires() {
         .catch(err => console.log(err));
 }
 
-//getQuestionnaires()
+getQuestionnaires()
